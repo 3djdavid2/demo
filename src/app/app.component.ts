@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component } from "@angular/core";
+import { RouterLinkActive, RouterLink, RouterOutlet } from "@angular/router";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
+    standalone: true,
+    imports: [RouterLinkActive, RouterLink, RouterOutlet]
 })
 export class AppComponent {
-  title = 'demo';
+  pageTitle = 'Acme Product Management';
 }
